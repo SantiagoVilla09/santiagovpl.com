@@ -54,40 +54,22 @@ export default function Template() {
                 <section id="three">
                     <h2>Get In Touch</h2>
                     <p>To get directly in touch use these following contact methods</p>
-                    <div className="row">
-                        <div className="col-8 col-12-small">
-                            <form method="post" action="#">
-                                <div className="row gtr-uniform gtr-50">
-                                    <div className="col-6 col-12-xsmall">
-                                        <input type="text" name="name" id="name" placeholder="Name" />
-                                    </div>
-                                    <div className="col-6 col-12-xsmall">
-                                        <input type="email" name="email" id="email" placeholder="Email" />
-                                    </div>
-                                    <div className="col-12">
-                                        <textarea name="message" id="message" placeholder="Message" rows="4" />
-                                    </div>
-                                </div>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
-                            </form>
-                        </div>
-                        <div className="col-4 col-12-small">
+                    <div className="row aln-center">
+                        <div className="col-6 col-12-small">
                             <ul className="labeled-icons">
                                 <li>
                                     <h3 className="icon solid fa-home"><span className="label">Address</span></h3>
-                                    1234 Somewhere Rd.<br />
-                                    Nashville, TN 00000<br />
-                                    United States
+                                    Estado de México,<br />
+                                    Atizapán de Zaragoza<br />
+                                    México
                                 </li>
                                 <li>
                                     <h3 className="icon solid fa-mobile-alt"><span className="label">Phone</span></h3>
-                                    000-000-0000
+                                    (+52) 55-4930-7820
                                 </li>
                                 <li>
                                     <h3 className="icon solid fa-envelope"><span className="label">Email</span></h3>
-                                    <a href="#">hello@untitled.tld</a>
+                                    <a href="mailto:santiagovillazon2001@gmail.com">santiagovillazon2001@gmail.com</a>
                                 </li>
                             </ul>
                         </div>
@@ -103,10 +85,6 @@ export default function Template() {
                         <li><a href="#" className="icon brands fa-github"><span className="label">Github</span></a></li>
                         <li><a href="#" className="icon brands fa-dribbble"><span className="label">Dribbble</span></a></li>
                         <li><a href="#" className="icon solid fa-envelope"><span className="label">Email</span></a></li>
-                    </ul>
-                    <ul className="copyright">
-                        <li>&copy; Untitled</li>
-                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                     </ul>
                 </div>
             </footer>
