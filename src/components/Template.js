@@ -3,14 +3,24 @@ import React from 'react';
 export default function Template() {
 
     const descriptions = [
-        "Portfolio website built with React and modern CSS.",
-        "E-commerce platform with shopping cart functionality.",
+        "In this multi agent system, agents are used to simulate the behavior of vehicles in a traffic network. The system is designed to optimize traffic flow and reduce congestion by allowing agents to communicate and cooperate with each other.",
+        "Edu-Quiz is an educational video game that aims to make learning fun and engaging for students. The game includes a web page for teachers and students, where they can access educational resources, track progress, and participate in quizzes and challenges.",
         "AI-powered chatbot using NLP.",
         "Weather app using OpenWeatherMap API.",
         "Fitness tracker for workouts and diet goals.",
         "Task manager with calendar integration."
         ];
-        
+
+    const projectTitles = [
+        "Proyecto de distribuición vial con multi agentes",
+        "Edu-Quiz - Videojuego educativo, con pagina web para profesores y alumnos",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ];    
+
     return (
         <div className="is-preload">
             {/* Header */}
@@ -51,7 +61,7 @@ export default function Template() {
                                 <a href={`/images/fulls/${num}.jpg`} className="image fit thumb">
                                     <img src={`/images/thumbs/${num}.jpg`} alt="" />
                                 </a>
-                                <h3>Project Title {num}</h3>
+                                <h3>{projectTitles[index]}</h3>
                                 <p>{descriptions[index]}</p>
                             </article>
                         ))}
