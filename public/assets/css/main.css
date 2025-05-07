@@ -240,6 +240,9 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+	.justified{
+		text-align: justify;
+	}
 
 /* Container */
 
@@ -2592,8 +2595,8 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background-color: #1f1815;
-		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-attachment: scroll, scroll;
+		background-image: url("images/overlay.png"), url("../../images/bgsant.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -2639,8 +2642,8 @@ input, select, textarea {
 		}
 
 		#header .image.avatar {
-			margin: 0 0 1em 0;
-			width: 6.25em;
+			margin: 0 0 2em 0;
+			width: 10em;
 		}
 
 /* Footer */
@@ -3219,3 +3222,4 @@ input, select, textarea {
 			}
 
 	}
+	

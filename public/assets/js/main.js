@@ -50,6 +50,7 @@
 
 		}
 
+
 	// Footer.
 		breakpoints.on('<=medium', function() {
 			$footer.insertAfter($main);
