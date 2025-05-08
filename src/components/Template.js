@@ -192,14 +192,13 @@ export default function Template() {
             </div>
           )}
 
-                  {/* CV Modal */}
                   {showCV && (
                       <div className="modal">
                           <div
                               className="modal-content"
                               style={{
-                                  width: "80vw",         // usa 80% del ancho de la ventana
-                                  height: "90vh",        // 90% de la altura de la ventana
+                                  width: "80vw", // 80% del ancho de la pantalla
+                                  height: "90vh", // 90% de la altura de la pantalla
                                   position: "relative",
                                   backgroundColor: "#fff",
                                   padding: "1em",
@@ -209,20 +208,38 @@ export default function Template() {
                           >
                               <button
                                   onClick={() => setShowCV(false)}
-                                  style={{
-                                      position: "absolute",
-                                      top: "0.5em",
-                                      right: "0.7em",
-                                      fontSize: "1.5em",
-                                      border: "none",
-                                      background: "transparent",
-                                      color: "red",
-                                      cursor: "pointer",
-                                  }}
                                   aria-label="Cerrar"
+                                  style={{
+                                      position: 'absolute',
+                                      top: '1rem',
+                                      right: '1rem',
+                                      backgroundColor: 'rgba(0, 0, 0, 0.05)',
+                                      border: 'none',
+                                      borderRadius: '50%',
+                                      width: '2.5rem',
+                                      height: '2.5rem',
+                                      display: 'flex',
+                                      alignItems: 'center',
+                                      justifyContent: 'center',
+                                      cursor: 'pointer',
+                                      boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
+                                      transition: 'background-color 0.3s, transform 0.2s, color 0.3s',
+                                      color: '#555',
+                                  }}
+                                  onMouseOver={(e) => {
+                                      e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.15)';
+                                      e.currentTarget.style.color = '#000';
+                                      e.currentTarget.style.transform = 'scale(1.1)';
+                                  }}
+                                  onMouseOut={(e) => {
+                                      e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+                                      e.currentTarget.style.color = '#555';
+                                      e.currentTarget.style.transform = 'scale(1)';
+                                  }}
                               >
-                                  ✖
+                                  <i className="fas fa-times"></i>
                               </button>
+
                               <iframe
                                   src="/pdf/Curriculum-Santiago.pdf"
                                   title="Curriculum Santiago Villazón"
@@ -236,6 +253,7 @@ export default function Template() {
                       </div>
                   )}
         </section>
+
 
         {/* Three */}
         <section id="three">
