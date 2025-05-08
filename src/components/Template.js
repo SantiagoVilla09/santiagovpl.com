@@ -27,24 +27,10 @@ export default function Template() {
         },
         {
             num: "04",
-            title: "Weather App",
-            description: "Weather app using OpenWeatherMap API.",
-            github: "https://github.com/tuusuario/weather-app",
-            youtube: "https://youtube.com/demo-weather"
-        },
-        {
-            num: "05",
-            title: "Fitness Tracker",
-            description: "Tracks workouts and diet goals with analytics.",
-            github: "https://github.com/tuusuario/fitness-tracker",
-            youtube: "https://youtube.com/demo-fitness"
-        },
-        {
-            num: "06",
-            title: "Task Manager",
-            description: "Task planner with integrated calendar.",
-            github: "https://github.com/tuusuario/task-manager",
-            youtube: "https://youtube.com/demo-task"
+            title: "Syntactic Analizer with Parallelism",
+            description: "A Python code parser that analyzes code syntax and detects errors. Using HTML, lines of code with errors are highlighted in parallel for greater reading and processing efficiency.",
+            github: "https://github.com/SantiagoVilla09/Analizador-de-sintaxis-con-paralelismo",
+            youtube: "https://www.youtube.com/watch?v=7BpvxfP2P7o"
         }
     ];
 
@@ -56,7 +42,7 @@ export default function Template() {
                     <div className="image avatar">
                         <img src="/images/avatarsan.png" alt="Santiago avatar" />
                     </div>
-                    <h1>
+                    <h1 style={{ color: 'lightgrey', textShadow: '1px 1px 5px rgba(0, 0, 0, 0.7)' }}>
                         <strong>I am Santiago Villazón Ponce de León</strong>,
                         <br />I'm a computer science student, who aspires to work and collaborate with world class companies.
                     </h1>
@@ -162,7 +148,7 @@ export default function Template() {
                                 {(selectedProject.github || selectedProject.youtube) && (
                                     <>
                                         <p style={{ marginTop: "1.5em", fontWeight: "bold" }}>
-                                            Presiona los íconos para ver más del proyecto:
+                                            Select the icons to learn more about the project:
                                         </p>
                                         <div style={{ marginTop: "1em" }}>
                                             {selectedProject.github && (
