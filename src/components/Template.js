@@ -119,9 +119,9 @@ export default function Template() {
           <header className="major">
             <h2>Academic Portfolio And Activities</h2>
           </header>
-          <p>I love exploring automation, data analysis, and machine learning in software development. These areas transform industries and improve lives through smart systems.</p>
-          <p className="justified">I am a student of Computer Science and Technology at Tecnológico de Monterrey. I value teamwork, critical thinking, and being detail-oriented.</p>
-          <p className="justified">Feel free to reach out if you’d like to talk about software, AI, or any topic that inspires you.</p>
+          <p className="justified">I love exploring the ways in which the automation of processes, data recollection and analysis can impact in software development. I am especially motivated by how these disciplines can transform industries and improve everyday lives through intelligent automation, advanced data analytics, and machine learning.</p>
+          <p className="justified">Student in Computer Science and Technology from Tecnológico de Monterrey with skills in teamwork, critical thinking, problem-solving, and leadership. I consider myself an adaptable, sociable person, results-oriented and attentive to details.</p>
+          <p className="justified">I am passionate about meeting new people and hearing diverse perspectives. Feel free to contact me if you want to chat about emerging technology, software product development, or any topic that inspires you.</p>
           <strong>Below you will find my academic, personal and social service work.</strong>
         </section>
 
@@ -192,40 +192,49 @@ export default function Template() {
             </div>
           )}
 
-          {/* CV Modal */}
+                  {/* CV Modal */}
                   {showCV && (
                       <div className="modal">
-                          <div className="modal-content" style={{ maxWidth: "100%", height: "100%", position: "relative" }}>
-
-                              {/* Botón X para cerrar */}
+                          <div
+                              className="modal-content"
+                              style={{
+                                  width: "80vw",         // usa 80% del ancho de la ventana
+                                  height: "90vh",        // 90% de la altura de la ventana
+                                  position: "relative",
+                                  backgroundColor: "#fff",
+                                  padding: "1em",
+                                  borderRadius: "8px",
+                                  overflow: "hidden",
+                              }}
+                          >
                               <button
                                   onClick={() => setShowCV(false)}
                                   style={{
                                       position: "absolute",
-                                      top: "10px",
-                                      right: "15px",
-                                      fontSize: "1.2em",
-                                      background: "none",
+                                      top: "0.5em",
+                                      right: "0.7em",
+                                      fontSize: "1.5em",
                                       border: "none",
+                                      background: "transparent",
+                                      color: "red",
                                       cursor: "pointer",
-                                      color: "#aaa"
                                   }}
                                   aria-label="Cerrar"
                               >
-                                  ❌
+                                  ✖
                               </button>
-
                               <iframe
-                                  src="./pdf/Curriculum-Santiago.pdf"
+                                  src="/pdf/Curriculum-Santiago.pdf"
                                   title="Curriculum Santiago Villazón"
                                   width="100%"
                                   height="100%"
-                                  style={{ border: "none" }}
+                                  style={{
+                                      border: "none",
+                                  }}
                               ></iframe>
                           </div>
                       </div>
                   )}
-
         </section>
 
         {/* Three */}
