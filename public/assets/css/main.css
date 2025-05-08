@@ -3247,6 +3247,11 @@ input, select, textarea {
 		overflow-y: auto;
 		box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 	  }
+
+	  .style-cv{
+		color: white;
+		font-size: small;
+	  }
 	  
 	  
 	
