@@ -7,30 +7,38 @@ export default function Template() {
     const projects = [
         {
             num: "01",
-            title: "Multi-agent road distribution project",
-            description: "In this multi agent system, agents simulate vehicle behavior in traffic. The system optimizes flow and reduces congestion through inter-agent communication.",
-            github: "https://github.com/SantiagoVilla09/SistemasMultiagentes.git",
-            youtube: "https://youtu.be/uIf8nNBjUr8"
+            title: "Advanced Trend Analizer Incorporated with AI",
+            description: "In this advanced trend alaiyzer, we use web scraping in various social media platforms to collect data and alalyze trends. Also with the help of a news API, we get the latest information using the users key words. Finally, we use the OpenAI API to generate a summary of the trends and news.",
+            github: "https://github.com/TecMrDocs/Cropopoly3-WhisperTrend.git",
+            youtube1: "https://youtu.be/cI4lHGGFTss",
+            youtube2: "https://youtu.be/ho354mPwApQ"
         },
         {
             num: "02",
-            title: "Edu-Quiz - Educational video game",
-            description: "Educational video game with website for students and teachers. Includes resources, tracking, and interactive quizzes.",
-            github: "https://github.com/Edu-Quiz",
-            youtube: "https://www.youtube.com/watch?v=ur4Tn-O5ELo"
+            title: "Multi-agent road distribution project",
+            description: "In this multi agent system, agents simulate vehicle behavior in traffic. The system optimizes flow and reduces congestion through inter-agent communication.",
+            github: "https://github.com/SantiagoVilla09/SistemasMultiagentes.git",
+            youtube1: "https://youtu.be/uIf8nNBjUr8"
         },
         {
             num: "03",
+            title: "Edu-Quiz - Educational video game",
+            description: "Educational video game with website for students and teachers. Includes resources, tracking, and interactive quizzes.",
+            github: "https://github.com/Edu-Quiz",
+            youtube1: "https://www.youtube.com/watch?v=ur4Tn-O5ELo"
+        },
+        {
+            num: "04",
             title: "Health-Tech mobile health tracking app",
             description: "Mobile app to record daily diet and workouts. Users can assess food quality and physical activity.",
             github: "https://github.com/HealthTech-MS"
         },
         {
-            num: "04",
+            num: "05",
             title: "Syntactic Analizer with Parallelism",
             description: "A Python code parser that analyzes code syntax and detects errors. Using HTML, lines of code with errors are highlighted in parallel for greater reading and processing efficiency.",
             github: "https://github.com/SantiagoVilla09/Analizador-de-sintaxis-con-paralelismo",
-            youtube: "https://www.youtube.com/watch?v=7BpvxfP2P7o"
+            youtube1: "https://www.youtube.com/watch?v=7BpvxfP2P7o"
         }
     ];
 
@@ -145,35 +153,99 @@ export default function Template() {
                                 <h3>{selectedProject.title}</h3>
                                 <p>{selectedProject.description}</p>
 
-                                {(selectedProject.github || selectedProject.youtube) && (
+                                {(selectedProject.github || selectedProject.youtube1 || selectedProject.youtube2) && (
                                     <>
                                         <p style={{ marginTop: "1.5em", fontWeight: "bold" }}>
                                             Select the icons to learn more about the project:
                                         </p>
-                                        <div style={{ marginTop: "1em" }}>
-                                            {selectedProject.github && (
-                                                <a
-                                                    href={selectedProject.github}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="icon brands fa-github"
-                                                    style={{ fontSize: "1.5em", marginRight: "1em" }}
-                                                >
-                                                    <span className="label">GitHub</span>
-                                                </a>
-                                            )}
-                                            {selectedProject.youtube && (
-                                                <a
-                                                    href={selectedProject.youtube}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="icon brands fa-youtube"
-                                                    style={{ fontSize: "1.5em" }}
-                                                >
-                                                    <span className="label">YouTube</span>
-                                                </a>
-                                            )}
-                                        </div>
+                                        <div
+  style={{
+    marginTop: "1em",
+    display: "flex",
+    gap: "2em",
+    justifyContent: "center",
+    alignItems: "center",
+  }}
+>
+  {selectedProject.github && (
+    <a
+      href={selectedProject.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="icon brands fa-github"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        fontSize: "1.5em",
+        textDecoration: "none",
+      }}
+    >
+      <span
+        style={{
+          fontSize: "0.75em",
+          color: "#aaa",
+          marginTop: "0.3em",
+        }}
+      >
+        GitHub
+      </span>
+    </a>
+  )}
+
+  {selectedProject.youtube1 && (
+    <a
+      href={selectedProject.youtube1}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="icon brands fa-youtube"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        fontSize: "1.5em",
+        textDecoration: "none",
+      }}
+    >
+      <span
+        style={{
+          fontSize: "0.75em",
+          color: "#aaa",
+          marginTop: "0.3em",
+        }}
+      >
+        YouTube 1
+      </span>
+    </a>
+  )}
+
+  {selectedProject.youtube2 && (
+    <a
+      href={selectedProject.youtube2}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="icon brands fa-youtube"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        fontSize: "1.5em",
+        textDecoration: "none",
+      }}
+    >
+      <span
+        style={{
+          fontSize: "0.75em",
+          color: "#aaa",
+          marginTop: "0.3em",
+        }}
+      >
+        YouTube 2
+      </span>
+    </a>
+  )}
+</div>
+
                                     </>
                                 )}
 
